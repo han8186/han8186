@@ -1,18 +1,20 @@
 package com.member;
 
-public class MemberDTO {
-	private String userId;
-	private String userName;
-	private String userPwd;
-	private String register_date;
-	private String modify_date;
-	private String email, email1, email2;
-	private String tel, tel1, tel2, tel3;
-	private String birth;
-	private String zip;
-	private String addr1;
-	private String addr2;
-	private int enabled;
+public class MemberDTO {//컬럼명
+	private String userId;  // userId
+	private String userName; //userName
+	private String userPwd;//pwd
+	private String reg_date;//reg_date
+	private String update_date;//update_date
+	private String email, email1, email2;//email
+	private String tel, tel1, tel2, tel3;//pNum
+	private String birth;//birth
+	private int code;//code
+	private String address;//address
+	private String address_detail;//address_detail
+	private int login;// login
+	
+	
 	public String getUserId() {
 		return userId;
 	}
@@ -31,17 +33,17 @@ public class MemberDTO {
 	public void setUserPwd(String userPwd) {
 		this.userPwd = userPwd;
 	}
-	public String getRegister_date() {
-		return register_date;
+	public String getReg_date() {
+		return reg_date;
 	}
-	public void setRegister_date(String register_date) {
-		this.register_date = register_date;
+	public void setReg_date(String reg_date) {
+		this.reg_date = reg_date;
 	}
-	public String getModify_date() {
-		return modify_date;
+	public String getUpdate_date() {
+		return update_date;
 	}
-	public void setModify_date(String modify_date) {
-		this.modify_date = modify_date;
+	public void setUpdate_date(String update_date) {
+		this.update_date = update_date;
 	}
 	public String getEmail() {
 		return email;
@@ -91,28 +93,33 @@ public class MemberDTO {
 	public void setBirth(String birth) {
 		this.birth = birth;
 	}
-	public String getZip() {
-		return zip;
+	public int getCode() {
+		return code;
 	}
-	public void setZip(String zip) {
-		this.zip = zip;
+	public void setCode(int code) {
+		this.code = code;
 	}
-	public String getAddr1() {
-		return addr1;
+	public String getAddress() {
+		return address;
 	}
-	public void setAddr1(String addr1) {
-		this.addr1 = addr1;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	public String getAddr2() {
-		return addr2;
+	public String getAddress_detail() {
+		return address_detail;
 	}
-	public void setAddr2(String addr2) {
-		this.addr2 = addr2;
+	public void setAddress_detail(String address_detail) {
+		this.address_detail = address_detail;
 	}
-	public int getEnabled() {
-		return enabled;
+	public int getLogin() {
+		return login;
 	}
-	public void setEnabled(int enabled) {
-		this.enabled = enabled;
+	public void setLogin(int login) {
+		this.login = login;
 	}
+	
+	
+	
+	
+	
 }
